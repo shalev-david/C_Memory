@@ -1,4 +1,4 @@
-#include "Rectangle.h"
+#include "include/Rectangle.h"
 
 float GetRectangleArea(Rectangle rect){
     return rect.width * rect.height;
@@ -14,8 +14,8 @@ Rectangle GetBiggerArea(Rectangle firstRect, Rectangle secondRect){
 }
 
 int CanFitIn(Rectangle firstRect, Rectangle secondRect){
-    if(firstRect.width >= secondRect.width && firstRect.height >= secondRect.height ||
-    firstRect.width <= secondRect.width && firstRect.height <= secondRect.height)
+    if((firstRect.width >= secondRect.width && firstRect.height >= secondRect.height) ||
+    (firstRect.width <= secondRect.width && firstRect.height <= secondRect.height))
     {
         return 1;
     }

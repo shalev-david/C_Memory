@@ -3,7 +3,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#include "../Rectangle/Rectangle.h"
+#include "Rectangle.h"
 
 void FillArrayInFibonachi(int *arr, size_t length);
 
