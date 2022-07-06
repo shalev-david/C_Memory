@@ -3,6 +3,8 @@
 
 #include <stdio.h>
 
-void FillArrayInFibonachi(int arr[], size_t length);
+void FillArrayInFibonachi(int *arr, size_t length);
+
+void PrintArray(int *arr, size_t length);
 
 #endif
