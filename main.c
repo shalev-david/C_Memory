@@ -1,12 +1,8 @@
 #include "main.h"
 
 int main(){
-    int a = 5;
-    int b = 3;
 
-    swap(&a, &b);
-
-    printf("%d\n", a);
-    printf("%d\n", b); 
-
+    Rectangle* rect = malloc(sizeof(Rectangle));
+    InitializeRect(rect, 25, 3.05);
+    printf("%.3f %.3f\n", rect->width, rect->height);
 }
