@@ -32,7 +32,15 @@ void PrintRectangleArray(Rectangle** arr, size_t length){
     }
 };
 
-void CharArrCopy(char* copyFrom, char* copyTo, size_t lengthToCopy){
+
+/*
+Because char takes only 1 byte you can pass in any type that takes 1 byte or more
+and pass in the length of all of the array in bytes -
+for example an array of int arr[4] you will pass sizeof(arr)
+and it will copy the array one byte after another
+*/
+void CharArrCopy(char copyFrom[], char copyTo[], size_t lengthToCopy){
+
     for(unsigned i =0; i< lengthToCopy; i++){
         copyTo[i] = copyFrom[i];
     }
@@ -49,4 +57,13 @@ void CharArrSetValues(char* arr, char value, size_t length){
     for(unsigned i =0; i< length; i++){
         arr[i] = value;
     }
+}
+
+void CharArrSwap(char* firstArray, char* secondArray, size_t length){
+    char* tempArray = malloc(length);
+    CharArrCopy(firstArray, tempArray, length);
+    CharArrCopy(secondArray, firstArray, length);
+    CharArrCopy(tempArray, secondArray, length); 
+
+    free(tempArray);
 }
