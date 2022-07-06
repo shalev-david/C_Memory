@@ -31,3 +31,9 @@ void PrintRectangleArray(Rectangle** arr, size_t length){
         printf("\n");
     }
 };
+
+void CharArrCopy(char* copyFrom, char* copyTo, size_t lengthToCopy){
+    for(unsigned i =0; i< lengthToCopy; i++){
+        copyTo[i] = copyFrom[i];
+    }
+}
