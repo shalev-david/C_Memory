@@ -37,3 +37,10 @@ void CharArrCopy(char* copyFrom, char* copyTo, size_t lengthToCopy){
         copyTo[i] = copyFrom[i];
     }
 }
+
+int CharArrCompare(char* firstArray, char* secondArray, size_t length){
+    for(unsigned i = 0; i< length; i++){
+        if(firstArray[i] != secondArray[i]) return 0;
+    }
+    return 1;
+}
