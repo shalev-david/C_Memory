@@ -2,9 +2,11 @@
 
 int main(){
     int a = 5;
-    int inc = 3;
+    int b = 3;
 
-    add(&a, inc);
+    swap(&a, &b);
 
-    printf("%d", a); 
+    printf("%d\n", a);
+    printf("%d\n", b); 
+
 }

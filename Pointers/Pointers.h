@@ -4,4 +4,6 @@
 
 void add(int* pNum, int incBy);
 
+void swap(int* firstPtr, int* secondPtr);
+
 #endif
