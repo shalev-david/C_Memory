@@ -14,4 +14,6 @@ void CharArrCopy(char* copyFrom, char* copyTo, size_t lengthToCopy)
 
 int CharArrCompare(char* firstArray, char* secondArray, size_t length);
 
+void CharArrSetValues(char* arr, char value, size_t length);
+
 #endif

@@ -44,3 +44,9 @@ int CharArrCompare(char* firstArray, char* secondArray, size_t length){
     }
     return 1;
 }
+
+void CharArrSetValues(char* arr, char value, size_t length){
+    for(unsigned i =0; i< length; i++){
+        arr[i] = value;
+    }
+}
