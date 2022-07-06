@@ -5,5 +5,7 @@
 #include <stdlib.h>
 #include "Pointers/Pointers.h"
 #include "Rectangle/Rectangle.h"
+#include "Arrays/Arrays.h"
+
 
 #endif
