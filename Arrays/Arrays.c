@@ -1,7 +1,6 @@
 #include "Arrays.h"
 
 void FillArrayInFibonachi(int *arr, size_t length){
-
     unsigned currentValue = 1;
     unsigned previousValue = 1;
     for(unsigned i = 0; i<length ; i++){
@@ -23,3 +22,12 @@ void PrintArray(int *arr, size_t length){
     }
     printf("\n");
 }
+
+void PrintRectangleArray(Rectangle** arr, size_t length){
+    for(unsigned i = 0; i < length; i++){
+        printf("Rectangle %d\n", i);
+        printf("Width = %.3f\n", arr[i]->width);
+        printf("Height = %.3f\n", arr[i]->height);
+        printf("\n");
+    }
+};
